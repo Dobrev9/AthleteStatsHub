@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Pereira</title>
+    <meta name="description" content="Detailed statistics and profile for Ilia Topuria">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/css/athlete.css' %}">
+    <link rel="icon" href="{% static 'home/images/alexpereira.svg' %}" type="image/svg+xml">
+    <link rel="icon" href="{% static 'home/images/alexpereira.png' %}" type="image/png">
+    <link rel="icon" href="{% static 'home/images/alexpereira.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'home/images/apple-touch-icon.png' %}">
+</head>
+<body>
+    <div class="container">
+        <!-- Athlete Header -->
+        <header class="athlete-header">
+            <img src="/static/home/images/athlete_chests/alex_pereira.png" alt="Ilia Topuria" class="athlete-image">
+            <div class="athlete-info">
+                <h1 class="athlete-name">Alex Pereira</h1>
+                <p class="athlete-nickname">"Poatan"</p>
+                <p class="nationality">🇧🇷 Brazil</p>
+                <div class="record-display">
+                    <div class="record-item">
+                        <div class="record-number">12</div>
+                        <div class="record-label">Wins</div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-number">3</div>
+                        <div class="record-label">Losses</div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-number">0</div>
+                        <div class="record-label">Draws</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Statistics Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">7</div>
+                <div class="stat-label">Wins by KO</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">78%</div>
+                <div class="stat-label">Finish Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">82%</div>
+                <div class="stat-label">Win Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Title Defenses</div>
+            </div>
+        </div>
+
+        <!-- Recent Fights -->
+        <section class="content-section">
+            <h2 class="section-title">Athlete Record</h2>
+            <div class="fight-results-list">
+                <!-- Fight 1: vs Charles Oliveira -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/pereira.png" alt="Ilia Topuria" class="fighter-img">
+                        </div>
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/ankalaev.png" alt="Charles Oliveira" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">PEREIRA (C) VS ANKALAEV #1</h3>
+                        <p class="fight-date">Mar. 8, 2025</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">5</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">5:00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Decision (unanimous)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">2-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 2: vs Max Holloway -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/pereira.png" alt="Ilia Topuria" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/rountree_jr.png" alt="Max Holloway" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">PEREIRA (C) VS ROUNTREE JR. #8</h3>
+                        <p class="fight-date">Oct. 5, 2024</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">4</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">4:32</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">TKO (punches)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">5-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 3: vs Alexander Volkanovski -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/pereira.png" alt="Alexander Volkanovski" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/prochazka.png" alt="Ilia Topuria" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">PEREIRA (C) VS PROCHAZKA #1</h3>
+                        <p class="fight-date">Jun. 29, 2024</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">2</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">0:13</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">TKO (head kick and punches)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">1-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 4: vs Josh Emmett -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/pereira.png" alt="Ilia Topuria" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/hill.png" alt="Josh Emmett" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">PEREIRA (C) VS HILL #1</h3>
+                        <p class="fight-date">Apr. 13, 2024</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">1</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">3:14</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">KO (punches)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">4-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 5: vs Bryce Mitchell -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/prochazka.png" alt="Ilia Topuria" class="fighter-img">
+                        </div>
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/pereira.png" alt="Bryce Mitchell" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">PROCHAZKA #1 VS PEREIRA #3</h3>
+                        <p class="fight-date">Nov. 11, 2023</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">2</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">4:08</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">TKO (elbows)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">3-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section class="content-section">
+            <a href="/" class="nav-button">← Back to P4P Rankings</a>
+        </section>
+    </div>
+</body>
+</html>

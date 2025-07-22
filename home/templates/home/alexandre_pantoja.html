@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre Pantoja</title>
+    <meta name="description" content="Detailed statistics and profile for Ilia Topuria">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/css/athlete.css' %}">
+    <link rel="icon" href="{% static 'home/images/alexandrepantoja.svg' %}" type="image/svg+xml">
+    <link rel="icon" href="{% static 'home/images/alexandrepantoja.png' %}" type="image/png">
+    <link rel="icon" href="{% static 'home/images/alexandrepantoja.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'home/images/apple-touch-icon.png' %}">
+</head>
+<body>
+    <div class="container">
+        <!-- Athlete Header -->
+        <header class="athlete-header">
+            <img src="/static/home/images/athlete_chests/alexandre_pantoja.png" alt="Ilia Topuria" class="athlete-image">
+            <div class="athlete-info">
+                <h1 class="athlete-name">Alexandre Pantoja</h1>
+                <p class="athlete-nickname">"The Cannibal"</p>
+                <p class="nationality">🇧🇷 Brazil</p>
+                <div class="record-display">
+                    <div class="record-item">
+                        <div class="record-number">30</div>
+                        <div class="record-label">Wins</div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-number">5</div>
+                        <div class="record-label">Losses</div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-number">0</div>
+                        <div class="record-label">Draws</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Statistics Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Wins by submission</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Title Defenses</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Fight Night Bonuses</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Win Streak</div>
+            </div>
+        </div>
+
+        <!-- Recent Fights -->
+        <section class="content-section">
+            <h2 class="section-title">Athlete Record</h2>
+            <div class="fight-results-list">
+                <!-- Fight 1: vs Charles Oliveira -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/pantoja.png" alt="Ilia Topuria" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/france.png" alt="Charles Oliveira" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">PANTOJA (C) VS FRANCE #4</h3>
+                        <p class="fight-date">Jun. 28, 2025</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">3</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">1:54</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Submission (rear-naked choke)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">1-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 2: vs Max Holloway -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/pantoja.png" alt="Ilia Topuria" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/asakura.png" alt="Max Holloway" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">PANTOJA (C) VS ASAKURA</h3>
+                        <p class="fight-date">Dec. 7, 2024</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">2</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">2:05</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Technical Submission (rear-naked choke)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">0-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 3: vs Alexander Volkanovski -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/pantoja.png" alt="Alexander Volkanovski" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/erceg.png" alt="Ilia Topuria" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">PANTOJA (C) VS ERCEG #10</h3>
+                        <p class="fight-date">May. 4, 2024</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">5</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">5:00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Decision (unanimous)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">3-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 4: vs Josh Emmett -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/pantoja.png" alt="Ilia Topuria" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/royal.png" alt="Josh Emmett" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">PANTOJA (C) VS ROYAL #2</h3>
+                        <p class="fight-date">Dec. 16, 2023</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">5</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">5:00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Decision (unanimous)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">3-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 5: vs Bryce Mitchell -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/moreno.png" alt="Ilia Topuria" class="fighter-img">
+                        </div>
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/pantoja.png" alt="Bryce Mitchell" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">MORENO (C) VS PANTOJA #2</h3>
+                        <p class="fight-date">Jul. 8, 2023</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">5</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">5:00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Decision (split)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">2-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section class="content-section">
+            <a href="/" class="nav-button">← Back to P4P Rankings</a>
+        </section>
+    </div>
+</body>
+</html>

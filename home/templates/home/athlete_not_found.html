@@ -1,0 +1,25 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Athlete Not Found</title>
+            {% load static %}
+            <link rel="stylesheet" href="{% static 'home/css/stylesheet.css' %}">
+        </head>
+        <body class="bg-gray-100 text-gray-800">
+            <div class="container mx-auto p-4 md:p-8 text-center">
+                <h1 class="main-title text-red-600">Athlete Not Found</h1>
+                <div class="content-section">
+                    <p class="text-xl text-gray-700 mb-4">
+                        Sorry, we could not find a profile for "<span class="font-bold text-blue-700">{{ athlete_slug|replace:'_':' '|title }}</span>".
+                    </p>
+                    <p class="text-gray-600">
+                        Please check the name for typos or try searching for another athlete.
+                    </p>
+                    <a href="{% url 'home:index' %}" class="primary-button inline-block mt-6 w-auto px-6">Go Back to Home</a>
+                </div>
+            </div>
+        </body>
+        </html>
+        

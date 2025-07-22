@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dricus Du Plessis</title>
+    <meta name="description" content="Detailed statistics and profile for Ilia Topuria">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/css/athlete.css' %}">
+    <link rel="icon" href="{% static 'home/images/duplessis.svg' %}" type="image/svg+xml">
+    <link rel="icon" href="{% static 'home/images/duplessis.png' %}" type="image/png">
+    <link rel="icon" href="{% static 'home/images/duplessis.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'home/images/apple-touch-icon.png' %}"></head>
+<body>
+    <div class="container">
+        <!-- Athlete Header -->
+        <header class="athlete-header">
+            <img src="/static/home/images/athlete_chests/dricus_du_plessis.png" alt="Ilia Topuria" class="athlete-image">
+            <div class="athlete-info">
+                <h1 class="athlete-name">Dricus Du Plessis</h1>
+                <p class="athlete-nickname">"Stillknocks"</p>
+                <p class="nationality">🇿🇦 South Africa</p>
+                <div class="record-display">
+                    <div class="record-item">
+                        <div class="record-number">23</div>
+                        <div class="record-label">Wins</div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-number">2</div>
+                        <div class="record-label">Losses</div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-number">0</div>
+                        <div class="record-label">Draws</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Statistics Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Wins by KO</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">67%</div>
+                <div class="stat-label">Finish Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Title Defenses</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">9</div>
+                <div class="stat-label">Win Streak</div>
+            </div>
+        </div>
+
+        <!-- Recent Fights -->
+        <section class="content-section">
+            <h2 class="section-title">Athlete Record</h2>
+            <div class="fight-results-list">
+                <!-- Fight 1: vs Charles Oliveira -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/du_plessis.png" alt="Ilia Topuria" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/strickland.png" alt="Charles Oliveira" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">DU PLESSIS (C) VS STRICKLAND #2</h3>
+                        <p class="fight-date">Feb. 9, 2025</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">5</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">5:00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Decision (unanimous)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">1-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 2: vs Max Holloway -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/du_plessis.png" alt="Ilia Topuria" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/adesanya.png" alt="Max Holloway" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">DU PLESSIS (C) VS ADESANYA #2</h3>
+                        <p class="fight-date">Aug. 18, 2024</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">4</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">3:38</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Submission (face crank)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">0-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 3: vs Alexander Volkanovski -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/strickland.png" alt="Alexander Volkanovski" class="fighter-img">
+                        </div>
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/du_plessis.png" alt="Ilia Topuria" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">STRICKLAND (C) VS DU PLESSIS #3</h3>
+                        <p class="fight-date">Jan. 21, 2024</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">5</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">5:00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Decision (split)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">3-0</span>
+                            </div>
+                            <div class="stat-item">
+                                <a href="/static/home/scorecard/strickland v du plessis.jpg" class="nav-button">Scorecard</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 4: vs Josh Emmett -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/whittaker.png" alt="Ilia Topuria" class="fighter-img">
+                        </div>
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/du_plessis.png" alt="Josh Emmett" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">WHITTAKER #9 VS DU PLESSIS #5</h3>
+                        <p class="fight-date">Jul. 9, 2023</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">2</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">2:23</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">TKO (punches)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">1-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 5: vs Bryce Mitchell -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/brunson.png" alt="Ilia Topuria" class="fighter-img">
+                        </div>
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/du_plessis.png" alt="Bryce Mitchell" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">BRUNSON #14 VS DU PLESSIS #9</h3>
+                        <p class="fight-date">Mar. 5, 2023</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">2</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">4:59</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">TKO (corner stoppage)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">0-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section class="content-section">
+            <a href="/" class="nav-button">← Back to P4P Rankings</a>
+        </section>
+    </div>
+</body>
+</html>

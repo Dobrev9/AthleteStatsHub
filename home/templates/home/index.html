@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athlete Stats Hub</title>
+    <meta name="description" content="Track and compare your favorite athletes' statistics and rankings">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/css/stylesheet.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="{% static 'home/images/favicon.svg' %}" type="image/svg+xml">
+    <link rel="icon" href="{% static 'home/images/favicon.png' %}" type="image/png">
+    <link rel="icon" href="{% static 'home/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'home/images/apple-touch-icon.png' %}">
+<script>const ALL_ATHLETES_FOR_COMPARISON = {{ all_athletes_for_comparison|safe }};</script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="main-title">Welcome to the Athlete Stats Hub!</h1>
+        </header>
+
+        <main>
+            <section class="content-section">
+                <h2>Men's Pound-for-Pound Top Rank</h2>
+                <div class="rankings-container">
+                    {% if ufc_rankings %}
+                        {% with ufc_rankings|first as champion %}
+                            <div class="featured-champion">
+                                <div class="champion-badge">Men's Pound-for-Pound Top Rank</div>
+                                <a href="{% url 'home:athlete_profile' athlete_slug=champion.slug %}">
+                                    <img src="{% static 'home/images/athlete_chests/' %}{{ champion.filename|default:'placeholder.png' }}" 
+                                        alt="{{ champion.name }}" class="champion-image">
+                                    <div class="champion-name">{{ champion.name|upper }}</div>
+                                    <div class="champion-rank">{{ champion.rank }}</div>
+                                </a>
+                            </div>
+                        {% endwith %}
+
+                        <div class="rankings-table">
+                            <div class="rankings-header">
+                                <h3>Top Contenders</h3>
+                            </div>
+                            <table class="rank-table">
+                                <tbody>
+                                    {% for fighter in ufc_rankings %}
+                                        {% if not forloop.first %}
+                                            <tr>
+                                                <td>{{ fighter.rank }}</td>
+                                                <td>
+                                                    <a href="{% url 'home:athlete_profile' athlete_slug=fighter.slug %}">
+                                                        <span class="fighter-name">{{ fighter.name }}</span>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        {% endif %}
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <div class="placeholder-box">
+                            <p style="color: #718096; text-align: center; font-style: italic;">
+                                Unable to load UFC rankings at this time. Please try again later.
+                            </p>
+                        </div>
+                    {% endif %}
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2>Search Athletes</h2>
+                <p>Use the search bar below to find specific athletes and view their detailed profiles and statistics.</p>
+                <div class="placeholder-box">
+                    <form id="athlete-search-form" onsubmit="handleSearch(event)">
+                        <input type="text" id="athlete-search" placeholder="Enter athlete name..." class="text-input" autocomplete="off">
+                        <button type="submit" class="primary-button">Search Athletes</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Compare Athletes</h2>
+                <p>Select two athletes to see a comprehensive comparison of their statistics from record items and stat cards.</p>
+                <div class="comparison-info">
+                    <p><strong>Available Athletes:</strong> {{ all_athletes_for_comparison|length }} athletes loaded from template files</p>
+                </div>
+                
+                <div class="athlete-comparison-grid" id="athlete-comparison-grid"></div>
+                
+                <div class="comparison-results" id="comparison-results" style="display: none;">
+                    <div class="comparison-header">
+                        <h3>Head-to-Head Comparison</h3>
+                        <div class="athletes-names">
+                            <span id="athlete1-name">Athlete 1</span>
+                            <span class="vs-text">VS</span>
+                            <span id="athlete2-name">Athlete 2</span>
+                        </div>
+                        <button class="secondary-button" onclick="resetComparison()">Choose Different Athletes</button>
+                    </div>
+                    
+                    <div class="common-stats" id="common-stats" style="display: none;">
+                        <h4>Common Statistics Comparison</h4>
+                        <div class="common-stats-grid" id="common-stats-content"></div>
+                    </div>
+                    
+                    <div class="comparison-content">
+                        <div class="athlete-stats-column">
+                            <div class="athlete-name-header" id="athlete1-header">Athlete 1</div>
+                            <div class="stats-section">
+                                <h5>Statistics</h5>
+                                <ul class="stats-list" id="athlete1-stats"></ul>
+                            </div>
+                        </div>
+                        
+                        <div class="athlete-stats-column">
+                            <div class="athlete-name-header" id="athlete2-header">Athlete 2</div>
+                            <div class="stats-section">
+                                <h5>Statistics</h5>
+                                <ul class="stats-list" id="athlete2-stats"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section class="signature-section">
+            <footer class="signature-footer">
+                <div class="signature-content">
+                    <div class="creator-profile">
+                        <div class="creator-avatar">MD</div>
+                        <div class="creator-info">
+                            <div class="creator-name">Mathis Dobrev</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-section">
+                        <div class="contact-label">Get in Touch</div>
+                        <div class="contact-methods">
+                            <a href="mailto:mathisdobrev@gmail.com" class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <span>mathisdobrev@gmail.com</span>
+                            </a>
+                            <a href="https://github.com/dobrev9" class="contact-item">
+                                <span class="contact-icon">🔗</span>
+                                <span>Portfolio</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-badge">
+                        <span>🏆</span>
+                        <span>Athlete Stats Hub</span>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+    <script src="{% static 'home/js/script.js' %}"></script>
+</body>
+</html>

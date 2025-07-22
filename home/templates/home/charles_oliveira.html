@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Oliveira</title>
+    <meta name="description" content="Detailed statistics and profile for Ilia Topuria">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/css/athlete.css' %}">
+    <link rel="icon" href="{% static 'home/images/oliveira.svg' %}" type="image/svg+xml">
+    <link rel="icon" href="{% static 'home/images/oliveira.png' %}" type="image/png">
+    <link rel="icon" href="{% static 'home/images/oliveira.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'home/images/apple-touch-icon.png' %}"></head>
+<body>
+    <div class="container">
+        <!-- Athlete Header -->
+        <header class="athlete-header">
+            <img src="/static/home/images/athlete_chests/charles_oliveira.png" alt="Ilia Topuria" class="athlete-image">
+            <div class="athlete-info">
+                <h1 class="athlete-name">Charles Oliveira</h1>
+                <p class="athlete-nickname">"Do Bronx"</p>
+                <p class="nationality">🇧🇷 Brazil</p>
+                <div class="record-display">
+                    <div class="record-item">
+                        <div class="record-number">35</div>
+                        <div class="record-label">Wins</div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-number">11</div>
+                        <div class="record-label">Losses</div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-number">0</div>
+                        <div class="record-label">Draws</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Statistics Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">16</div>
+                <div class="stat-label">Wins by Submission</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">87%</div>
+                <div class="stat-label">Finish Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">66%</div>
+                <div class="stat-label">Win Rate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">11</div>
+                <div class="stat-label">Previous Win Streak</div>
+            </div>
+        </div>
+
+        <!-- Recent Fights -->
+        <section class="content-section">
+            <h2 class="section-title">Athlete Record</h2>
+            <div class="fight-results-list">
+                <!-- Fight 1: vs Charles Oliveira -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/topuria.png" alt="Ilia Topuria" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/oliveira.png" alt="Charles Oliveira" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">TOPURIA (C) VS OLIVEIRA #2</h3>
+                        <p class="fight-date">Jun. 28, 2025</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">1</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">2:27</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">KO (punches)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">8-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 2: vs Max Holloway -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/oliveira.png" alt="Ilia Topuria" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/chandler.png" alt="Max Holloway" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">OLIVEIRA #2 VS CHANDLER #7</h3>
+                        <p class="fight-date">Nov. 16, 2024</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">5</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">5:00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Decision (unanimous)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">0-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 3: vs Alexander Volkanovski -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/oliveira.png" alt="Alexander Volkanovski" class="fighter-img">
+                        </div>
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/tsarukyan.png" alt="Ilia Topuria" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">OLIVEIRA #1 VS TSARUKYAN #4</h3>
+                        <p class="fight-date">Apr. 13, 2024</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">3</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">5:00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Decision (split)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">3-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 4: vs Josh Emmett -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/oliveira.png" alt="Ilia Topuria" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/dariush.png" alt="Josh Emmett" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">OLIVEIRA #1 VS DARIUSH #4</h3>
+                        <p class="fight-date">Jun. 10, 2023</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">1</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">4:10</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">TKO (punches)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">8-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 5: vs Bryce Mitchell -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/oliveira.png" alt="Ilia Topuria" class="fighter-img">
+                        </div>
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/makhachev.png" alt="Bryce Mitchell" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">OLIVEIRA (C) VS MAKHACHEV #4</h3>
+                        <p class="fight-date">Oct. 22, 2022</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">2</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">3:16</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Submission (arm-triangle choke)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">10-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section class="content-section">
+            <a href="/" class="nav-button">← Back to P4P Rankings</a>
+        </section>
+    </div>
+</body>
+</html>

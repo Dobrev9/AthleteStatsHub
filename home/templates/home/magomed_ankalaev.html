@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magomed Ankalaev</title>
+    <meta name="description" content="Detailed statistics and profile for Ilia Topuria">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/css/athlete.css' %}">
+    <link rel="icon" href="{% static 'home/images/ankalaev.svg' %}" type="image/svg+xml">
+    <link rel="icon" href="{% static 'home/images/ankalaev.png' %}" type="image/png">
+    <link rel="icon" href="{% static 'home/images/ankalaev.ico' %}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{% static 'home/images/apple-touch-icon.png' %}">
+</head>
+<body>
+    <div class="container">
+        <!-- Athlete Header -->
+        <header class="athlete-header">
+            <img src="/static/home/images/athlete_chests/magomed_ankalaev.png" alt="Ilia Topuria" class="athlete-image">
+            <div class="athlete-info">
+                <h1 class="athlete-name">Magomed Ankalaev</h1>
+                <p class="nationality">🇷🇺 Russia</p>
+                <div class="record-display">
+                    <div class="record-item">
+                        <div class="record-number">21</div>
+                        <div class="record-label">Wins</div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-number">1</div>
+                        <div class="record-label">Losses</div>
+                    </div>
+                    <div class="record-item">
+                        <div class="record-number">1</div>
+                        <div class="record-label">Draws</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Statistics Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Wins by KO</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">53%</div>
+                <div class="stat-label">of Wins by Knockout</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3.66</div>
+                <div class="stat-label">Sig. Str. Landed Per Min</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">14</div>
+                <div class="stat-label">Unbeaten Streak</div>
+            </div>
+        </div>
+
+        <!-- Recent Fights -->
+        <section class="content-section">
+            <h2 class="section-title">Athlete Record</h2>
+            <div class="fight-results-list">
+                <!-- Fight 1: vs Charles Oliveira -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/pereira.png" alt="Ilia Topuria" class="fighter-img">
+                        </div>
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/ankalaev.png" alt="Charles Oliveira" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">PEREIRA (C) VS ANKALAEV #1</h3>
+                        <p class="fight-date">Mar. 8, 2025</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">5</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">5:00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Decision (unanimous)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">5-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 2: vs Max Holloway -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/ankalaev.png" alt="Ilia Topuria" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/rakic.png" alt="Max Holloway" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">ANKALAEV #1 VS RAKIC #5</h3>
+                        <p class="fight-date">Oct. 26, 2024</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">3</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">5:00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Decision (unanimous)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">0-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 3: vs Alexander Volkanovski -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container winner">
+                            <img src="/static/home/images/results/ankalaev.png" alt="Alexander Volkanovski" class="fighter-img">
+                            <div class="win-label">WIN</div>
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/walker.png" alt="Ilia Topuria" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">ANKALAEV #3 VS WALKER #7</h3>
+                        <p class="fight-date">Jan. 14, 2024</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">2</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">2:42</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">KO (punches)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">0-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 4: vs Josh Emmett -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/ankalaev.png" alt="Ilia Topuria" class="fighter-img">
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/walker.png" alt="Josh Emmett" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">ANKALAEV #2 VS WALKER #7</h3>
+                        <p class="fight-date">Oct. 21, 2023</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">1</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">3:13</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">NC (illegal knee)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">3-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fight 5: vs Bryce Mitchell -->
+                <div class="fight-result-card">
+                    <div class="fighters-images">
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/blachowicz.png" alt="Ilia Topuria" class="fighter-img">
+                        </div>
+                        <div class="fighter-image-container">
+                            <img src="/static/home/images/results/ankalaev.png" alt="Bryce Mitchell" class="fighter-img">
+                        </div>
+                    </div>
+                    <div class="fight-info">
+                        <h3 class="fight-title">BLACHOWICZ #3 VS ANKALAEV #4</h3>
+                        <p class="fight-date">Dec. 11, 2022</p>
+                        <div class="fight-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Round</span>
+                                <span class="stat-value">5</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Time</span>
+                                <span class="stat-value">5:00</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Method</span>
+                                <span class="stat-value">Draw (split)</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Win streak</span>
+                                <span class="stat-value">1-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation -->
+        <section class="content-section">
+            <a href="/" class="nav-button">← Back to P4P Rankings</a>
+        </section>
+    </div>
+</body>
+</html>
